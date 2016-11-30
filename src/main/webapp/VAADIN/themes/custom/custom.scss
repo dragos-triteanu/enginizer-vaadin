@@ -1,0 +1,41 @@
+@import "../valo/valo.scss";
+
+@mixin colored {
+  @include valo;
+
+  $flat_green: #27ae60;
+  $flat_blue: #3498db;
+  $flat_red: #c0392b;
+
+  .v-app {
+  }
+
+  .v-button {
+    border: none;
+  }
+  .v-textfield-cool {
+    border-bottom: 1px solid darkgray;
+    padding-left: 0px;
+  }
+
+  .v-button-cool {
+    background-color: $flat_green;
+    color: white;
+  }
+
+  .v-save-button {
+    background-color: $flat_blue;
+    color: white !important;
+  }
+
+  .v-delete-button {
+    background-color: $flat_red;
+    color: white !important;
+  }
+
+  .v-formlayout {
+    margin-left: 50px;
+  }
+}
+
+@include colored;
